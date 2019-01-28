@@ -1,64 +1,75 @@
 # cnn-image-classification-with-keras
 
 # How to Run
-#### Requirements
->
-    python3
-    keras
-    pandas
-    numpy
-    matplotlib.plot
+#### Python3 Requirements
+
+- keras
+- pandas
+- numpy
+- matplotlib.plot
+
 #### How to see parameters
->
-    python3 main.py --help
->
 
-    usage: main.py [-h] {training,prediction,splitting,plotting} ...
+```bash
+$ python3 main.py --help
+usage: main.py [-h] {training,prediction,splitting,plotting} ...
 
-    Image Processing Project
+Image Processing Project
 
-    positional arguments:
-    {training,prediction,splitting,plotting}
+positional arguments:
+{training,prediction,splitting,plotting}
 
-    optional arguments:
-    -h, --help            show this help message and exit
+optional arguments:
+-h, --help            show this help message and exit
+```
 
 
 #### How to split data to training and test set
-> python3 main.py splitting
+
+```bash
+$ python3 main.py splitting
+```
 
 #### How to perform training
-> python3 main.py training 
+
+```bash
+$ python3 main.py training 
+```
 
 #### How to see training variables
->
-    python3 main.py training --help
->
-    Using TensorFlow backend.
-    usage: main.py training [-h] [--epochs EPOCHS] [--batch-size BATCH_SIZE]
-                            [--steps-per-epoch STEPS_PER_EPOCH]
 
-    optional arguments:
-    -h, --help            show this help message and exit
-    --epochs EPOCHS
-    --batch-size BATCH_SIZE
-    --steps-per-epoch STEPS_PER_EPOCH
+```bash
+$ python3 main.py training --help
+Using TensorFlow backend.
+usage: main.py training [-h] [--epochs EPOCHS] [--batch-size BATCH_SIZE]
+                        [--steps-per-epoch STEPS_PER_EPOCH]
+
+optional arguments:
+-h, --help            show this help message and exit
+--epochs EPOCHS
+--batch-size BATCH_SIZE
+--steps-per-epoch STEPS_PER_EPOCH
+
+```
 
 You can change the shown parameters like this:
-> python3 main.py training --epochs 32
 
+```bash
+$ python3 main.py training --epochs 32
+```
 
 #### How to perform prediction
 
 You have to put your images to Prediction folder. If there is no folder like this. The program will warn you to create it.
 
-> python3 main.py prediction
-Result should be like this for 1 image
->
+```bash
+$ python3 main.py prediction
+Result should be like this for 1 image:
     Prediction/example_pizza.jpeg
     Answer:  9
     Predicted: pizza
     pizza
+```
 
 # Explanations of Steps
 ## Split Training and Test Set
@@ -146,4 +157,5 @@ You can plot the model accuracy and model loss with the model info saved in trai
 ![alt text](./figures/Figure_2.png)
 
 ## Contributor(s)
-Fatih Sarhan (f9n)
+- [Enes Erkoç](https://github.com/eneserkoc)
+- [Fatih Sarhan](https://github.com/f9n)
