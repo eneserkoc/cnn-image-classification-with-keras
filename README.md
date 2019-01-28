@@ -144,3 +144,6 @@ In this part you can test the images different than the dataset images. It uses 
 You can plot the model accuracy and model loss with the model info saved in training step. 
 ![alt text](./figures/Figure_1.png)
 ![alt text](./figures/Figure_2.png)
+
+## Contributor(s)
+Fatih Sarhan (f9n)
